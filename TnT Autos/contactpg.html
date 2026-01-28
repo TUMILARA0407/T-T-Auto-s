@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact T&T Auto's</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .contact-hero {
+        padding: 40px 0;
+        text-align: center;
+      }
+      .contact-hero h1 {
+        font-size: 2.5rem;
+        color: black;
+        margin-bottom: 10px;
+      }
+      .contact-hero p {
+        font-size: 1.1rem;
+        color: #163e5e;
+      }
+      .contact-info-section {
+        padding: 40px 0;
+      }
+      .contact-info-section h2 {
+        text-align: center;
+        color: #163e5e;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+      .contact-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+      .contact-card {
+        background: #7aafc9;
+        padding: 25px;
+        border-radius: 8px;
+      }
+      .contact-card h3 {
+        color: #0b2a3b;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .card-label {
+        color: #163e5e;
+        font-weight: 600;
+        margin: 0;
+        font-size: 0.95rem;
+      }
+      .contact-btn {
+        background: white;
+        color: black;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+        display: inline-block;
+      }
+      .phone-btn::before {
+        content: "☎";
+        margin-right: 8px;
+        color: #000;
+        font-size: 1.2rem;
+      }
+      .mail-btn::before {
+        content: "✉";
+        margin-right: 8px;
+        color: #000;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <h1 class="logo">TnT Auto's</h1>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="aboutpg.html">About</a>
+          <a href="biodatapg.html">Bio-data</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contactpg.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Contact Hero Section -->
+      <section class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Get in touch with our team today.</p>
+      </section>
+
+      <!-- Contact Information Section -->
+      <section class="contact-info-section">
+        <h2>Get in Touch</h2>
+        <div class="contact-cards-grid">
+          <!-- Founder Card -->
+          <div class="contact-card">
+            <h3>Founder</h3>
+            <div class="card-content">
+              <h3>ORESANYA TUMILARA</h3>
+              <p class="card-label">Email</p>
+              <a href="mailto:oresanyatumilara@gmail.com" class="contact-btn mail-btn"
+                >Email</a
+              >
+              <p class="card-label">Phone</p>
+              <a href="tel:+2348108799150" class="contact-btn phone-btn">Phone</a>
+            </div>
+          </div>
+
+          <!-- Co-founder Card -->
+          <div class="contact-card">
+            <h3>Co-founder</h3>
+            <div class="card-content">
+              <h3>OYEDELE TEMITOPE</h3>
+              <p class="card-label">Email</p>
+              <a href="mailto:oyedeletope559@gmail.com" class="contact-btn mail-btn"
+                >Email</a
+              >
+              <p class="card-label">Phone</p>
+              <a href="tel:+2347075528987" class="contact-btn phone-btn">Phone</a>
+            </div>
+          </div>
+           
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>© T&T Auto's</p>
+      </div>
+    </footer>
+  </body>
+</html>

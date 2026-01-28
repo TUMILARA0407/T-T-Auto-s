@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - T&T Auto's</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .faq-hero {
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .faq-hero h1 {
+        font-size: 2.5rem;
+        color: black;
+        margin-bottom: 15px;
+      }
+      .faq-hero p {
+        font-size: 1.1rem;
+        color: #163e5e;
+      }
+      .faq-container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      .faq-item {
+        background: #7aafc9;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .faq-question {
+        padding: 20px 25px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #0b2a3b;
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+      .faq-question:hover {
+        background: white;
+      }
+      .faq-icon {
+        font-size: 1.5rem;
+        color: #0b2a3b;
+      }
+      .faq-answer {
+        padding: 0 25px 20px 25px;
+        color: #163e5e;
+        line-height: 1.6;
+        display: none;
+      }
+      .faq-answer.show {
+        display: block;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body style="background-color: #7aafc9">
+    <!-- Header -->
+    <header>
+      <div class="container nav">
+        <h1 class="logo">TnT Auto's</h1>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="aboutpg.html">About</a>
+          <a href="biodatapg.html">Bio-data</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contactpg.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- FAQ Hero Section -->
+    <section class="faq-hero">
+      <h1>Frequently Asked Questions</h1>
+      <p>Find answers to common questions about our services and vehicles</p>
+    </section>
+
+    <!-- FAQ Content -->
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What types of vehicles do you sell?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          We offer a wide selection of quality vehicles including sedans, SUVs,
+          and compact cars. All our vehicles are inspected and certified to meet
+          our high standards before sale. Visit our inventory page to browse our
+          current selection.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Do you provide financing options?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Yes, we work with multiple lenders to provide flexible financing
+          solutions tailored to your needs. Our team can help you explore
+          various payment plans and options that fit your budget.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Are your vehicles inspected before sale?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Absolutely! Every vehicle undergoes thorough mechanical and safety
+          inspections. We ensure that each car meets our strict quality
+          standards and is road-ready before it reaches our customers.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What is your warranty policy?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          We offer warranty coverage on selected vehicles. The details vary
+          depending on the vehicle and its age. Please contact us for specific
+          warranty information on the vehicle you're interested in.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How can I contact you for more information?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          You can reach us via email, phone, or visit us in person at Babcock
+          University main campus in Ilisan-Remo, Ogun State. Check our contact
+          page for specific details and our team's contact information.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What is your after-sales support like?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Our relationship doesn't end at the sale! We provide ongoing support,
+          maintenance guidance, and assistance. Our team is always available to
+          help with any questions or concerns about your vehicle.
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© T&T Auto's</p>
+      </div>
+    </footer>
+
+    <script>
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+        const answer = item.querySelector(".faq-answer");
+        const icon = item.querySelector(".faq-icon");
+
+        question.addEventListener("click", () => {
+          answer.classList.toggle("show");
+          icon.textContent = answer.classList.contains("show") ? "−" : "+";
+        });
+      });
+    </script>
+  </body>
+</html>
